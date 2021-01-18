@@ -1,0 +1,72 @@
+/* Описание */
+
+.our-work {
+    font-family: "Roboto", sans-serif;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+}
+
+.job-description {
+    font-family: "Roboto", sans-serif;
+    color: $primary-text-color;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.description-active {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.about {
+    padding-bottom: 94px;
+}
+
+.description {
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.image {
+    position: relative;
+}
+
+.product-thumb {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 0.03em;
+    width: 370px;
+    height: 70px;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+}
+
+.broadcast {
+    background-color: $secondary-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
