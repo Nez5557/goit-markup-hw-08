@@ -47,35 +47,19 @@ nav {
 
 @media screen and (min-widht: 480px) {
   .container {
-    font-family: "Roboto", sans-serif;
     width: 480px;
-    height: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    justify-content: space-between;
   }
 }
 
 @media screen and (min-widht: 768px) {
   .container {
-    font-family: "Roboto", sans-serif;
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    justify-content: space-between;
   }
 }
 
 @media screen and (min-widht: 1200px) {
   .container {
-    font-family: "Roboto", sans-serif;
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    justify-content: space-between;
   }
 }
 
