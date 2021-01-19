@@ -1,6 +1,7 @@
 /* Описание */
 
 .our-work {
+  text-align: center;
   font-family: "Roboto", sans-serif;
   color: $title-text-color;
   font-weight: 700;
@@ -24,56 +25,84 @@
 // Mobale
 
 @media screen and (min-widht: 480px) {
-  .about {
-    display: none;
-    //   padding-bottom: 94px;
-  }
-  .description {
-    font-family: "Roboto", sans-serif;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .image {
-    position: relative;
-  }
-
-  .product-thumb {
-    // display: flex;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  .broadcast {
     margin: 0;
-    position: absolute;
-    bottom: 0;
-    letter-spacing: 0.03em;
-    width: 370px;
-    height: 70px;
-    color: #ffffff;
-    background-color: rgba(47, 48, 58, 0.8);
-    text-transform: uppercase;
   }
 
   .broadcast-title {
-    background-color: $secondary-background-color;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
+    margin-left: 0;
     // display: flex;
     // width: 270px;
   }
+
+  .broadcast-icon {
+    display: none;
+    background-color: $secondary-background-color;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 120px;
+    top: 0%;
+    bottom: 0%;
+  }
+}
+
+// .about{
+//   @media screen and (max-widht: 767px) {
+//     display: none;
+//   }
+// }
+
+// @media screen and (min-widht: 768px) {
+//   .about {
+//     // display: none;
+//     padding-bottom: 94px;
+//   }
+
+.description {
+  @media screen and (max-widht: 767px) {
+    display: none;
+  }
+  font-family: "Roboto", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+.image {
+  position: relative;
+  @media screen and (max-widht: 767px) {
+    display: none;
+  }
+}
+
+.product-thumb {
+  @media screen and (max-widht: 767px) {
+    display: none;
+  }
+  // display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  letter-spacing: 0.03em;
+  width: 370px;
+  height: 70px;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
 }
 
 // Desctop
