@@ -1,22 +1,50 @@
 .container {
   font-family: "Roboto", sans-serif;
-  width: 1200px;
+  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   justify-content: space-between;
   // overflow: hidden;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
+
+// Mobale
 
 @media screen and (min-widht: 480px) {
-  width: 480px;
+  .container {
+    font-family: "Roboto", sans-serif;
+    width: 480px;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }
+
+// Tablet
 
 @media screen and (min-widht: 768px) {
-  width: 768px;
+  .container {
+    font-family: "Roboto", sans-serif;
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }
 
+// Desctop
+
 @media screen and (min-widht: 1200px) {
-  width: 1200px;
+  .container {
+    font-family: "Roboto", sans-serif;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }
