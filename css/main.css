@@ -119,6 +119,37 @@ nav {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
 /* Студио-портфолио-контакты-e-mail-телефон */
 .site-nav,
 .contacts-list {

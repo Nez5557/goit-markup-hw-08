@@ -22,6 +22,23 @@
                 <nav>
                     <a href="./index.html" class="logo-continuation">
                         <span class="logo">Web</span>Studio</a>
+                        <button 
+                        type="button" 
+                        class="menu-button"
+                        aria-expanded="false"
+                        aria-controls="menu-container"
+                        data-menu-button>
+                            <svg 
+                                widht=40 
+                                height=40
+                                aria-label="Переключатель мобильного меню"
+                            >
+                                <use class="icon-cross" href="./images/sprite-8.svg#close_40px"></use>
+                                <use class="icon-menu" href="./images/sprite-8.svg#menu_40px"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-container" id="menu-container" data-menu>
+                        </div>
                     <ul class="site-nav">
                         <li class="site-link">
                             <a href="./index.html" class="link current">Студия</a>
@@ -641,5 +658,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
