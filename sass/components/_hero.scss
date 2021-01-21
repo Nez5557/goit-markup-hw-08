@@ -62,3 +62,37 @@
   border: 0;
   border-radius: 4px;
 }
+
+.hero {
+  background-image: url("/images/hero-480-1x.png");
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/hero-480-2x.png");
+  }
+}
+
+@media (min-widht: 480px) {
+  .hero {
+    background-image: url("/images/hero-768-1x.png");
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/hero-768-2x.png");
+  }
+}
+
+@media (min-widht: 768px) {
+  .hero {
+    background-image: url("/images/hero-1600-1x.png");
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/hero-1600-2x.png");
+  }
+}
