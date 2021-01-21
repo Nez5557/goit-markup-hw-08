@@ -39,6 +39,8 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  // padding-top: 16px;
+  // padding-bottom: 16px;
 }
 .logo-continuation {
   color: $black-color;
@@ -73,17 +75,32 @@
 .menu-container {
   display: block;
   position: absolute;
-  top: 100%;
+  top: 70%;
   left: 0;
-  // width: 100%;
-  // height: 400px;
-  // background-color: palegoldenrod;
+  width: 100%;
+  height: 435px;
+  background-color: $white-color;
+  transform: translate(0%, -66%) scale(1);
+  outline: 1px solid red;
+  opacity: 0;
+  // pointer-events: none;
   // padding: 20px;
   // text-align: center;
   // font-size: 20px;
 
   &.is-open {
     display: block;
+  }
+
+  .menu-container-nav {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-top: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    // opacity: 1;
   }
 }
 
@@ -95,16 +112,19 @@
   font-family: "Roboto", sans-serif;
   color: $title-text-color;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
+  // font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts-item + .contacts-item {
-  margin-left: 50px;
-}
-.site-link + .site-link {
-  margin-left: 50px;
-}
+
+// .contacts-item + .contacts-item {
+//   margin-left: 50px;
+// }
+// .site-link + .site-link {
+//   margin-left: 50px;
+// }
+
 .site-nav .nav-link.current {
   color: $accent-color;
 }
@@ -112,16 +132,19 @@
 .site-link {
   text-decoration: none;
   color: currentColor;
+  margin-bottom: 40px;
 }
 
 .link {
   position: relative;
   color: $title-text-color;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
+  // font-size: 14px;
+  margin-bottom: 40px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
+  // padding: 32px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -167,7 +190,9 @@
 .social-links {
   color: $primary-text-color;
   font-weight: 500;
-  font-size: 14px;
+  // font-size: 14px;
+  font-size: 18px;
+  margin-bottom: 16px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: inline-flex;

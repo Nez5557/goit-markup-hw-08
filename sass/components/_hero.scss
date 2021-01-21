@@ -63,8 +63,10 @@
   border-radius: 4px;
 }
 
-.hero {
-  background-image: url("/images/hero-480-1x.png");
+@media (min-widht: 481px) {
+  .hero {
+    background-image: url("/images/hero-480-1x.png");
+  }
 }
 
 @media (min-resolution: 2dppx) {
@@ -73,7 +75,7 @@
   }
 }
 
-@media (min-widht: 480px) {
+@media (min-widht: 769px) {
   .hero {
     background-image: url("/images/hero-768-1x.png");
   }
@@ -85,7 +87,7 @@
   }
 }
 
-@media (min-widht: 768px) {
+@media (min-widht: 1201px) {
   .hero {
     background-image: url("/images/hero-1600-1x.png");
   }
