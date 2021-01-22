@@ -15,13 +15,13 @@
   color: $primary-text-color;
   font-size: 14px;
   line-height: 1.71;
-  margin: 0;
 }
 
-// .description-active {
-// padding-top: 94px;
-// padding-bottom: 94px;
-// }
+.description-active {
+  height: 226px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+}
 
 // Mobale
 
@@ -30,8 +30,20 @@
 //     // margin: 0;
 //   }
 
+.broadcast {
+  background-color: $secondary-background-color;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  // width: 270px;
+}
+
 .broadcast-title {
-  flex-direction: column;
+  // flex-direction: column;
   max-width: 100%;
   height: 120px;
   border-radius: 4px;
@@ -46,10 +58,10 @@
 
 .broadcast-icon {
   background-color: $secondary-background-color;
-  transform: translateY(-50%);
-  position: relative;
-  top: 50%;
-  left: 180px;
+  // transform: translateY(-50%);
+  // position: relative;
+  // top: 50%;
+  // left: 180px;
   // margin-right: 50%;
   // display: none;
   // justify-content: center;
@@ -157,16 +169,4 @@
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
   text-transform: uppercase;
-}
-
-.broadcast {
-  background-color: $secondary-background-color;
-  justify-content: center;
-  align-items: center;
-  width: 450px;
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  // display: flex;
-  // width: 270px;
 }

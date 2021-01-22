@@ -1,8 +1,13 @@
 /* Наша команда */
 
+.about {
+  display: none;
+}
+
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: block;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
   text-align: center;
   color: $title-text-color;
   background-color: $secondary-background-color;
