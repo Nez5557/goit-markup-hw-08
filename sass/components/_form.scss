@@ -95,7 +95,7 @@
 
 .icon-tel-form {
   //   transform: translateY(-620%);
-  transform: translateY(-555%);
+  transform: translateY(-560%);
   position: absolute;
   top: 50%;
   left: 55px;
@@ -106,7 +106,7 @@
 
 .icon-email-form {
   //   transform: translateY(-230%);
-  transform: translateY(-190%);
+  transform: translateY(-185%);
   position: absolute;
   top: 50%;
   left: 55px;
@@ -142,7 +142,9 @@
   color: $primary-text-color;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.17;
+  //   font-size: 14px;
   text-decoration: none;
 }
 
@@ -153,7 +155,9 @@
   width: 16px;
   height: 15px;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.17;
+  //   font-size: 14px;
   background-image: url(../images/Vector.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -185,8 +189,8 @@
   letter-spacing: 0.06em;
   width: 200px;
   padding: 10px 28px;
-  margin-left: 125px;
-  margin-top: 30px;
+  margin-left: 80px;
+  margin-top: 32px;
   color: $white-color;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

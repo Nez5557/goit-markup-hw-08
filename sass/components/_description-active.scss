@@ -15,39 +15,50 @@
   color: $primary-text-color;
   font-size: 14px;
   line-height: 1.71;
+  margin: 0;
 }
 
 // .description-active {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
+// padding-top: 94px;
+// padding-bottom: 94px;
 // }
 
 // Mobale
 
-@media screen and (min-widht: 480px) {
-  .broadcast {
-    margin: 0;
-  }
+// @media screen and (min-widht: 480px) {
+//   .broadcast {
+//     // margin: 0;
+//   }
 
-  .broadcast-title {
-    border-radius: 4px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    // display: flex;
-    // width: 270px;
-  }
+.broadcast-title {
+  flex-direction: column;
+  max-width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
+  // margin-left: 0;
+  // display: flex;
+  // width: 270px;
+}
 
-  .broadcast-icon {
-    display: none;
-    background-color: $secondary-background-color;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 450px;
-    height: 120px;
-    top: 0%;
-    bottom: 0%;
-  }
+.broadcast-icon {
+  background-color: $secondary-background-color;
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  left: 180px;
+  // margin-right: 50%;
+  // display: none;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
+  //   width: 450px;
+  //   height: 120px;
+  // top: 50%;
+  //   bottom: 0%;
 }
 
 // .about{
@@ -64,8 +75,56 @@
 
 .description {
   @media screen and (max-widht: 767px) {
-    display: none;
+    // display: none;
   }
+  display: none;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  // text-align: center;
+}
+.image {
+  position: relative;
+  // @media screen and (max-widht: 767px) {
+  //   // display: none;
+  // }
+}
+
+.product-thumb {
+  @media screen and (max-widht: 767px) {
+    //   display: none;
+    // }
+    // display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 0.03em;
+    width: 370px;
+    height: 70px;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+  }
+
+  // Desctop
+
+  // @media screen and (min-widht: 1200px) {
+  //   .about {
+  //     padding-bottom: 94px;
+}
+
+.description {
   font-family: "Roboto", sans-serif;
   margin-top: 0px;
   margin-bottom: 50px;
@@ -75,17 +134,12 @@
   line-height: 1.2;
   text-align: center;
 }
+
 .image {
   position: relative;
-  @media screen and (max-widht: 767px) {
-    display: none;
-  }
 }
 
 .product-thumb {
-  @media screen and (max-widht: 767px) {
-    display: none;
-  }
   // display: flex;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -105,57 +159,14 @@
   text-transform: uppercase;
 }
 
-// Desctop
-
-@media screen and (min-widht: 1200px) {
-  .about {
-    padding-bottom: 94px;
-  }
-
-  .description {
-    font-family: "Roboto", sans-serif;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    color: $title-text-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .image {
-    position: relative;
-  }
-
-  .product-thumb {
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    letter-spacing: 0.03em;
-    width: 370px;
-    height: 70px;
-    color: #ffffff;
-    background-color: rgba(47, 48, 58, 0.8);
-    text-transform: uppercase;
-  }
-
-  .broadcast {
-    background-color: $secondary-background-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // width: 270px;
-    width: 450px;
-    height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-  }
+.broadcast {
+  background-color: $secondary-background-color;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 270px;
+  width: 450px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
