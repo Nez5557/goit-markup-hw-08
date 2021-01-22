@@ -44,20 +44,20 @@ nav {
   outline: 1px solid red;
 }
 
-@media screen and (min--widht: 480px) {
+@media screen and (min-widht: 480px) {
   .container {
     width: 480px;
   }
 }
 
-@media screen and (min--widht: 768px) {
+@media screen and (min-widht: 768px) {
   .container {
     width: 768px;
     justify-content: space-between;
   }
 }
 
-@media screen and (min--widht: 1200px) {
+@media screen and (min-widht: 1200px) {
   .container {
     width: 1200px;
     justify-content: space-between;
@@ -72,7 +72,7 @@ nav {
 /* Цвет фона #FFFFFF */
 /* Цвет фона команды #F5F4FA; */
 /* Цвет фона подвала #2F303A */
-@media screen and (min--widht: 480px) {
+@media screen and (min-widht: 480px) {
   .page-header {
     list-style: none;
     padding-top: 60px;
@@ -80,7 +80,7 @@ nav {
   }
 }
 
-@media screen and (min--widht: 768px) and (max--widht: 1200px) {
+@media screen and (min-widht: 768px) and (max-widht: 1200px) {
   .page-header {
     display: flex;
     justify-content: center;
@@ -377,7 +377,7 @@ nav {
   line-height: 1.71;
 }
 
-@media screen and (min--widht: 480px) {
+@media screen and (min-widht: 480px) {
   .description-active {
     height: 226px;
   }
@@ -396,6 +396,9 @@ nav {
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .broadcast-icon {
     background-color: #f5f4fa;
@@ -415,7 +418,7 @@ nav {
   }
 }
 
-@media screen and (min--widht: 480px) and (max-widht: 767px) {
+@media screen and (min-widht: 480px) and (max-widht: 767px) {
   .product-thumb {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -436,7 +439,7 @@ nav {
   }
 }
 
-@media screen and (min--widht: 480px) {
+@media screen and (min-widht: 480px) {
   .description {
     font-family: "Roboto", sans-serif;
     margin-top: 0px;
@@ -469,7 +472,7 @@ nav {
 }
 
 /* Наша команда */
-@media screen and (min--widht: 480px) {
+@media screen and (min-widht: 480px) {
   .about {
     display: none;
   }

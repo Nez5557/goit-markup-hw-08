@@ -19,7 +19,7 @@
 
 // Mobale
 
-@media screen and (min--widht: 480px) {
+@media screen and (min-widht: 480px) {
   .description-active {
     height: 226px;
     // padding-top: 94px;
@@ -44,11 +44,11 @@
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     // text-align: center;
     // margin-left: 0;
-    // display: flex;
     // width: 270px;
   }
 
