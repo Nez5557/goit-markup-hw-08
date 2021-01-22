@@ -7,6 +7,9 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.our-work + .our-work {
   margin-bottom: 10px;
 }
 
@@ -19,29 +22,33 @@
 
 // Mobale
 
-// .description-active {
-//   // padding-top: 94px;
-//   // padding-bottom: 94px;
-// }
+.description-active {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  //   // padding-top: 94px;
+  //   // padding-bottom: 94px;
+}
 
 .broadcast {
-  background-color: $secondary-background-color;
   justify-content: center;
   align-items: center;
   width: 450px;
-  height: 120px;
   border-radius: 4px;
-  margin-bottom: 30px;
   // display: flex;
+  // height: 120px;
+}
+
+.broadcast + .broadcast {
+  margin-bottom: 30px;
 }
 
 .broadcast-title {
-  // flex-direction: column;
+  background-color: $secondary-background-color;
   width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-  // display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   // text-align: center;
@@ -80,18 +87,22 @@
 //   }
 
 .description {
+  // display: none;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 60px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  // line-height: 1.2;
+  // font-size: 36px;
   @media screen and (max-width: 767px) {
     // display: none;
   }
-  display: none;
-  font-family: "Roboto", sans-serif;
-  margin-top: 0px;
-  margin-bottom: 100px;
-  color: $title-text-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  // text-align: center;
 }
 .image {
   position: relative;
@@ -130,37 +141,37 @@
   //     padding-bottom: 94px;
 }
 
-.description {
-  font-family: "Roboto", sans-serif;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  color: $title-text-color;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-}
+// .description {
+//   font-family: "Roboto", sans-serif;
+//   margin-top: 0px;
+//   margin-bottom: 50px;
+//   color: $title-text-color;
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.2;
+//   text-align: center;
+// }
 
-.image {
-  position: relative;
-}
+// .image {
+//   position: relative;
+// }
 
-.product-thumb {
-  // display: flex;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  letter-spacing: 0.03em;
-  // width: 370px;
-  // height: 70px;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
-  text-transform: uppercase;
-}
+// .product-thumb {
+//   // display: flex;
+//   // width: 370px;
+//   // height: 70px;
+//   font-family: "Roboto", sans-serif;
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   text-align: center;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 0;
+//   position: absolute;
+//   bottom: 0;
+//   letter-spacing: 0.03em;
+//   color: #ffffff;
+//   background-color: rgba(47, 48, 58, 0.8);
+//   text-transform: uppercase;
+// }

@@ -3,7 +3,7 @@
   pointer-events: none;
 }
 .backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -16,11 +16,11 @@
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   //   transform: translate(-50%, -50%) scale(1);
-  transform: translate(-120%, -70%) scale(1);
+  transform: translate(-50%, -20%) scale(1);
   width: 450px;
   height: 609px;
   // width: 528px;

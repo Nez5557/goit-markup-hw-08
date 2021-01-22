@@ -86,13 +86,6 @@ nav {
     justify-content: center;
     list-style: none;
   }
-  .page-header li + li {
-    margin-left: 30px;
-  }
-}
-
-.contacts {
-  margin-left: auto;
 }
 
 /* Header */
@@ -154,7 +147,7 @@ nav {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #fff;
-  transform: translate(0%, -62%) scale(1);
+  transform: translate(0%, -53%) scale(1);
   outline: 1px solid red;
 }
 
@@ -281,7 +274,7 @@ nav {
 .hero {
   background-color: #2f303a;
   color: #fff;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Оптимизированная.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -323,7 +316,7 @@ nav {
   border-radius: 4px;
 }
 
-@media (min-widht: 481px) {
+@media (min-width: 481px) {
   .hero {
     background-image: url("/images/hero-480-1x.png");
   }
@@ -335,7 +328,7 @@ nav {
   }
 }
 
-@media (min-widht: 769px) {
+@media (min-width: 769px) {
   .hero {
     background-image: url("/images/hero-768-1x.png");
   }
@@ -347,7 +340,7 @@ nav {
   }
 }
 
-@media (min-widht: 1601px) {
+@media (min-width: 1201px) {
   .hero {
     background-image: url("/images/hero-1600-1x.png");
   }
@@ -367,6 +360,9 @@ nav {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.our-work + .our-work {
   margin-bottom: 10px;
 }
 
@@ -377,34 +373,44 @@ nav {
   line-height: 1.71;
 }
 
+.description-active {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .broadcast {
-  background-color: #f5f4fa;
   justify-content: center;
   align-items: center;
   width: 450px;
-  height: 120px;
   border-radius: 4px;
+}
+
+.broadcast + .broadcast {
   margin-bottom: 30px;
 }
 
 .broadcast-title {
+  background-color: #f5f4fa;
   width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .description {
-  display: none;
   font-family: "Roboto", sans-serif;
   margin-top: 0px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  padding-top: 60px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .image {
@@ -432,38 +438,6 @@ nav {
   }
 }
 
-.description {
-  font-family: "Roboto", sans-serif;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.image {
-  position: relative;
-}
-
-.product-thumb {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
-  text-transform: uppercase;
-}
-
 /* Наша команда */
 .about {
   display: none;
@@ -477,6 +451,7 @@ nav {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  padding-bottom: 60px;
 }
 
 .our-people {
@@ -488,14 +463,18 @@ nav {
 
 .box {
   background-color: #fff;
-  width: 270px;
+  width: 450px;
   margin: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .box-img {
-  width: 270px;
+  width: 450px;
+}
+
+.staff {
+  height: 162px;
 }
 
 .our-team {
@@ -549,38 +528,38 @@ nav {
 /* Постоянные клиенты */
 .regular-customers {
   background-color: #fff;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin: 0;
+  margin-bottom: 60px;
 }
 
 .clients-list {
+  width: 450px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   /* outline: 1px solid tomato; */
 }
 
 .clients-item {
-  width: 170px;
   list-style: none;
-  align-items: center;
-  box-align: center;
-  justify-content: center;
 }
 
-.clients-item + .clients-item {
-  margin-left: 30px;
+.clients-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.clients-item:nth-child(-n + 4) {
+  margin-bottom: 30px;
 }
 
 .clients {
   fill: #afb1b8;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -597,16 +576,11 @@ nav {
   color: #2f303a;
   background-color: #2f303a;
   text-decoration: none;
-  padding: 60px 15px;
-}
-
-.basement .container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-contacts {
-  margin-right: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-continuation-conclusion {
@@ -626,6 +600,10 @@ nav {
   font-size: 14px;
   margin-top: 20px;
   line-height: 1.71;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .link-current-name,
@@ -648,10 +626,9 @@ nav {
 
 .appeal {
   text-transform: uppercase;
-  width: 206px;
-  height: 80px;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
 }
 
 .appeal-name {
@@ -663,15 +640,12 @@ nav {
 }
 
 .footer-form {
-  margin-left: 95px;
-  width: 570px;
-  height: 86px;
+  width: 450px;
+  height: 156px;
 }
 
 .outlook-form {
-  display: flex;
   align-items: center;
-  width: 570px;
 }
 
 .footer-form-title {
@@ -687,7 +661,7 @@ nav {
 }
 
 .outlook-form input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 0 15px 16px;
   margin-right: 14px;
@@ -700,6 +674,9 @@ nav {
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 .outlook-form button {
@@ -708,6 +685,7 @@ nav {
   text-align: center;
   font-family: "Roboto", sans-serif;
   padding: 10px 28px;
+  margin-left: 125px;
   width: 200px;
   color: #fff;
   background-color: #2196f3;
@@ -723,7 +701,6 @@ nav {
 
 .footer-form-icon {
   color: #fff;
-  margin-left: 10px;
 }
 
 .backdrop.is-hidden {
@@ -732,7 +709,7 @@ nav {
 }
 
 .backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -745,10 +722,10 @@ nav {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-120%, -70%) scale(1);
+  transform: translate(-50%, -20%) scale(1);
   width: 450px;
   height: 609px;
   padding: 40px;

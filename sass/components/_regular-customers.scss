@@ -1,48 +1,59 @@
 /* Постоянные клиенты */
 
 .regular-customers {
-    background-color: $white-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin: 0;
+  background-color: $white-color;
+  margin-bottom: 60px;
+  //  flex-wrap: wrap;
+  //  display: flex;
+  //  padding-top: 94px;
+  //  padding-bottom: 94px;
 }
 
 .clients-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* outline: 1px solid tomato; */
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* outline: 1px solid tomato; */
 }
 
 .clients-item {
-    width: 170px;
-    list-style: none;
-    align-items: center;
-    box-align: center;
-    justify-content: center;
+  list-style: none;
+  //   flex-wrap: wrap;
+  //   width: 170px;
+  //   align-items: center;
+  //   //   box-align: center;
+  //   justify-content: center;
 }
 
-.clients-item + .clients-item {
-    margin-left: 30px;
+.clients-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+
+.clients-item:nth-child(-n + 4) {
+  margin-bottom: 30px;
 }
 
 .clients {
-    fill: #afb1b8;
-    width: 170px;
-    height: 90px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
+  //   width: 170px;
+  //align-items: center;
+  fill: #afb1b8;
+  width: 210px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
     fill: #2196f3;
     color: #2196f3;
     border: 1px solid #2196f3;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-}
-
-

@@ -19,14 +19,15 @@
     justify-content: center;
     list-style: none;
   }
-  .page-header li + li {
-    margin-left: 30px;
-  }
+  // .page-header li + li {
+  //   margin-left: 30px;
+  // }
 }
 
-.contacts {
-  margin-left: auto;
-}
+// .contacts {
+//   margin-left: auto;
+// }
+
 /* Header */
 
 .header-main {
@@ -91,7 +92,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $white-color;
-  transform: translate(0%, -62%) scale(1);
+  transform: translate(0%, -53%) scale(1);
   outline: 1px solid red;
 
   &.is-open {
