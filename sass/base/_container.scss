@@ -11,7 +11,7 @@
 
 // Mobale
 
-@media screen and (min-widht: 480px) {
+@media screen and (min--widht: 480px) {
   .container {
     width: 480px;
   }
@@ -19,7 +19,7 @@
 
 // Tablet
 
-@media screen and (min-widht: 768px) {
+@media screen and (min--widht: 768px) {
   .container {
     width: 768px;
   }
@@ -27,7 +27,7 @@
 
 // Desctop
 
-@media screen and (min-widht: 1200px) {
+@media screen and (min--widht: 1200px) {
   .container {
     width: 1200px;
   }

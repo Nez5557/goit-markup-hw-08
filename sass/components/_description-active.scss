@@ -55,10 +55,10 @@
   // justify-content: center;
   // align-items: center;
   // text-align: center;
-  //   width: 450px;
-  //   height: 120px;
+  // width: 450px;
+  // height: 120px;
   // top: 50%;
-  //   bottom: 0%;
+  // bottom: 0%;
 }
 
 // .about{
@@ -80,7 +80,7 @@
   display: none;
   font-family: "Roboto", sans-serif;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   color: $title-text-color;
   font-weight: 700;
   font-size: 36px;
@@ -161,12 +161,12 @@
 
 .broadcast {
   background-color: $secondary-background-color;
-  // display: flex;
   justify-content: center;
   align-items: center;
-  // width: 270px;
   width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+  // display: flex;
+  // width: 270px;
 }
