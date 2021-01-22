@@ -392,13 +392,11 @@ nav {
     display: flex;
   }
   .broadcast-title {
+    flex-direction: column;
     max-width: 100%;
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .broadcast-icon {
     background-color: #f5f4fa;
