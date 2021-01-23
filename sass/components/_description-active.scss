@@ -1,16 +1,12 @@
 /* Описание */
 
 .our-work {
-  text-align: center;
+  // text-align: center;
   font-family: "Roboto", sans-serif;
   color: $title-text-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-}
-
-.our-work + .our-work {
-  margin-bottom: 10px;
 }
 
 .job-description {
@@ -22,6 +18,29 @@
 
 // Mobale
 
+@media screen and (max-width: 767px) {
+  .our-work + .our-work {
+    margin-bottom: 10px;
+  }
+
+  .our-work {
+    text-align: center;
+  }
+
+  .broadcast {
+    width: 450px;
+  }
+
+  .broadcast + .broadcast {
+    margin-bottom: 30px;
+  }
+
+  .broadcast-title {
+    width: 450px;
+    height: 120px;
+    display: flex;
+  }
+}
 .description-active {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -32,25 +51,21 @@
 .broadcast {
   justify-content: center;
   align-items: center;
-  width: 450px;
   border-radius: 4px;
+  // width: 450px;
   // display: flex;
   // height: 120px;
 }
 
-.broadcast + .broadcast {
-  margin-bottom: 30px;
-}
-
 .broadcast-title {
   background-color: $secondary-background-color;
-  width: 450px;
-  height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
+  // width: 450px;
+  // height: 120px;
+  // display: flex;
   // text-align: center;
   // margin-left: 0;
   // width: 270px;
@@ -87,7 +102,6 @@
 //   }
 
 .description {
-  // display: none;
   font-family: "Roboto", sans-serif;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -98,6 +112,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
+  // display: none;
   // line-height: 1.2;
   // font-size: 36px;
   @media screen and (max-width: 767px) {
@@ -175,3 +190,22 @@
 //   background-color: rgba(47, 48, 58, 0.8);
 //   text-transform: uppercase;
 // }
+
+@media screen and (min-width: 768px) {
+  .our-work {
+    text-align: left;
+  }
+
+  .broadcast {
+    flex-flow: column;
+    width: 738px;
+    height: 507px;
+  }
+
+  .broadcast-title {
+    width: 354px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

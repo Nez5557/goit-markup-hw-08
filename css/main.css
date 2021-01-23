@@ -29,10 +29,20 @@ svg {
   height: auto;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  height: 60px;
+@media screen and (max-width: 767px) {
+  nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
 }
 
 .container {
@@ -72,54 +82,6 @@ nav {
 /* Цвет фона #FFFFFF */
 /* Цвет фона команды #F5F4FA; */
 /* Цвет фона подвала #2F303A */
-@media screen and (min-width: 480px) {
-  .page-header {
-    list-style: none;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-image: center;
-    list-style: none;
-  }
-  .page-header li + li {
-    margin-left: 30px;
-  }
-  .contacts {
-    margin-left: auto;
-  }
-  .menu-button {
-    display: none;
-  }
-  .header-main {
-    display: flex;
-  }
-  .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  .logo-continuation {
-    margin-right: 85px;
-  }
-  .menu-container {
-    display: flex;
-  }
-  .menu-container-nav {
-    display: flex;
-  }
-}
-
-/* Header */
-.header-main {
-  align-items: center;
-}
-
 /* Logo WebStudio */
 .logo {
   color: #2196f3;
@@ -135,60 +97,7 @@ nav {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  margin-right: 265px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-button {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button:hover, .menu-button:focus {
-  fill: #2196f3;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-@media screen and (min-width: 480px) {
-  .menu-container {
-    display: none;
-    position: absolute;
-    top: 70%;
-    left: 0;
-    width: 100%;
-    height: 453px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #fff;
-    transform: translate(0%, -62%) scale(1);
-    outline: 1px solid red;
-  }
-  .menu-container.is-open {
-    display: block;
-  }
-  .menu-container-nav {
-    position: relative;
-    top: 0%;
-    left: 0%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 /* Студио-портфолио-контакты-e-mail-телефон */
@@ -197,7 +106,6 @@ nav {
   font-family: "Roboto", sans-serif;
   color: #212121;
   font-weight: 500;
-  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -209,15 +117,12 @@ nav {
 .site-link {
   text-decoration: none;
   color: currentColor;
-  margin-bottom: 40px;
 }
 
 .link {
   position: relative;
   color: #212121;
   font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 40px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -231,7 +136,6 @@ nav {
 .current {
   position: relative;
   color: #2196f3;
-  padding-bottom: 8px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -263,11 +167,138 @@ nav {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .page-header {
+    list-style: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /* Header */
+  .header-main {
+    align-items: center;
+  }
+  .menu-button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  .menu-button:hover, .menu-button:focus {
+    fill: #2196f3;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-button .icon-cross {
+    display: none;
+  }
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    height: 453px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+    transform: translate(0%, -62%) scale(1);
+    outline: 1px solid red;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+  .menu-container-nav {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .current {
+    padding-bottom: 8px;
+  }
+  .link {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .site-link {
+    margin-bottom: 40px;
+  }
+  .social-links {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .logo-continuation {
+    margin-right: 265px;
+  }
+  .site-nav,
+  .contacts-list {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: flex;
+    list-style-image: center;
+    list-style: none;
+  }
+  .page-header li + li {
+    margin-left: 30px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .header-main {
+    display: flex;
+  }
+  .menu-container {
+    display: flex;
+  }
+  .menu-container-nav {
+    display: flex;
+  }
+  .site-nav {
+    margin-right: 70px;
+  }
+  .logo-continuation {
+    margin-right: 70px;
+  }
+  .site-nav,
+  .contacts-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+  }
+  .link {
+    font-size: 14px;
+    padding: 30px 0;
+  }
+  .site-link + .site-link {
+    margin-left: 50px;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: center;
+  }
+  .social-links:nth-child(odd) {
+    margin-top: 10px;
+  }
+}
+
 .social-links {
   color: #757575;
   font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 16px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: inline-flex;
@@ -306,7 +337,7 @@ nav {
   background-position: center;
   background-size: cover;
   text-align: center;
-  max-width: 480px;
+  min-width: 480px;
   height: 400px;
   font-weight: 900;
   line-height: 1.62;
@@ -381,7 +412,6 @@ nav {
 
 /* Описание */
 .our-work {
-  text-align: center;
   font-family: "Roboto", sans-serif;
   color: #212121;
   font-weight: 700;
@@ -389,15 +419,31 @@ nav {
   line-height: 1.14;
 }
 
-.our-work + .our-work {
-  margin-bottom: 10px;
-}
-
 .job-description {
   font-family: "Roboto", sans-serif;
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 767px) {
+  .our-work + .our-work {
+    margin-bottom: 10px;
+  }
+  .our-work {
+    text-align: center;
+  }
+  .broadcast {
+    width: 450px;
+  }
+  .broadcast + .broadcast {
+    margin-bottom: 30px;
+  }
+  .broadcast-title {
+    width: 450px;
+    height: 120px;
+    display: flex;
+  }
 }
 
 .description-active {
@@ -408,21 +454,13 @@ nav {
 .broadcast {
   justify-content: center;
   align-items: center;
-  width: 450px;
   border-radius: 4px;
-}
-
-.broadcast + .broadcast {
-  margin-bottom: 30px;
 }
 
 .broadcast-title {
   background-color: #f5f4fa;
-  width: 450px;
-  height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -462,6 +500,23 @@ nav {
     color: #ffffff;
     background-color: rgba(47, 48, 58, 0.8);
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-work {
+    text-align: left;
+  }
+  .broadcast {
+    flex-flow: column;
+    width: 738px;
+    height: 507px;
+  }
+  .broadcast-title {
+    width: 354px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -559,8 +614,13 @@ nav {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .clients-list {
+    width: 450px;
+  }
+}
+
 .clients-list {
-  width: 450px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -597,6 +657,16 @@ nav {
   color: #2196f3;
   border: 1px solid #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    width: 768px;
+  }
+  .clients {
+    width: 354px;
+    height: 120px;
+  }
 }
 
 /* FOOTER */
