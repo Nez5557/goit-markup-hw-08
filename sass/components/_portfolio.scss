@@ -1,161 +1,238 @@
 /* Портфолио */
 
 .header-line {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+.menu-button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  height: 435px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $white-color;
+  transform: translate(0%, -62%) scale(1);
+  //   outline: 1px solid red;
+
+  &.is-open {
+    display: block;
+  }
+
+  .menu-container-nav {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .portfolio-title {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  //   padding-top: 94px;
+  //   padding-bottom: 94px;
 }
 
 .conteiner-portfolio {
-    width: 1200px;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 1200px;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-portfolio {
-    width: 1170px;
-    align-items: center;
-    text-align: center;
+  width: 1170px;
+  align-items: center;
+  text-align: center;
 }
 
-.button-title {
-    margin-right: 8px;
+// .button-title {
+//   margin-right: 8px;
+// }
+
+.button-title:first-child {
+  margin-right: 7px;
 }
+
+.button-title:nth-child(even) {
+  margin-right: 7px;
+}
+
+// .button-title:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 .button-list {
-    margin-bottom: 50px;
+  width: 362px;
+  height: 91px;
+  margin-bottom: 40px;
+  //   margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: left;
 }
 
 .button-list button:hover {
-    font-family: "Roboto", sans-serif;
-    color: $white-color;
-    background-color: $accent-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Roboto", sans-serif;
+  color: $white-color;
+  background-color: $accent-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list button:focus {
-    font-family: "Roboto", sans-serif;
-    color: $white-color;
-    background-color: $accent-color;
-    flex-direction: row;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Roboto", sans-serif;
+  color: $white-color;
+  background-color: $accent-color;
+  flex-direction: row;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list button {
-    font-family: "Roboto", sans-serif;
-    background-color: $button-color;
-    color: $title-text-color;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    line-height: 1.63;
-    letter-spacing: 0, 03em;
-    border-radius: 4px;
-    border: none;
-    letter-spacing: 0.03em;
-    padding: 6px, 22px;
-    width: 128px;
-    height: 38px;
+  font-family: "Roboto", sans-serif;
+  background-color: $button-color;
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0, 03em;
+  border-radius: 4px;
+  border: none;
+  letter-spacing: 0.03em;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  //   width: 128px;
+  min-width: 73px;
+  max-width: 145px;
+  height: 38px;
 }
 
 button {
-    position: center;
-    display: inline-block;
-    font-family: inherit;
-    cursor: pointer;
-    text-align: center;
-}
-
-.button-list {
-    display: flex;
-    list-style: none;
-    justify-content: center;
+  position: center;
+  display: inline-block;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
 }
 
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .portfolio-box {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  width: 450px;
+  //   height: 294px;
 }
 
 .img-card {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .image-portfolio {
-    width: 370px;
-    border: 1px solid #eeeeee;
-    margin-left: 30px;
-    margin-bottom: 30px;
+  width: 450px;
+  //   width: 370px;
+  border: 1px solid #eeeeee;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .overlay-text {
-    background-color: rgba(33, 150, 243, 0.9);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 63px 24px;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: $white-color;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: $white-color;
+  margin: 0;
+  padding-left: 24px;
 }
 
 .portfolio-box:hover .overlay-text,
 .portfolio-box:focus .overlay-text {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 .portfolio-box:hover,
 .portfolio-box:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .title-description {
-    padding: 24px;
+  padding: 24px;
 }
 
 .name-title {
-    color: $title-text-color;
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0, 06em;
-    margin: 0;
+  color: $title-text-color;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0, 06em;
+  margin: 0;
 }
 
 .description-name {
-    color: $primary-text-color;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0, 03em;
-    margin: 0;
+  color: $primary-text-color;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0, 03em;
+  margin: 0;
 }
