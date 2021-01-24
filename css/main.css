@@ -49,7 +49,6 @@ svg {
 
 .container {
   font-family: "Roboto", sans-serif;
-  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -333,7 +332,6 @@ svg {
   background-position: center;
   background-size: cover;
   text-align: center;
-  min-width: 480px;
   height: 400px;
   font-weight: 900;
   line-height: 1.62;
@@ -357,7 +355,7 @@ svg {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  width: 200px;
+  max-width: 200px;
   height: 50px;
   line-height: 1.87;
   box-align: center;
@@ -667,6 +665,7 @@ svg {
 
 /* FOOTER */
 .basement {
+  display: inline-block;
   color: #2f303a;
   background-color: #2f303a;
   text-decoration: none;
@@ -755,7 +754,7 @@ svg {
 }
 
 .outlook-form input {
-  max-width: 100%;
+  width: 100%;
   height: 50px;
   padding: 15px 0 15px 16px;
   margin-right: 14px;
@@ -779,8 +778,7 @@ svg {
   text-align: center;
   font-family: "Roboto", sans-serif;
   padding: 10px 28px;
-  margin-left: 125px;
-  width: 200px;
+  max-width: 200px;
   color: #fff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
