@@ -21,6 +21,7 @@
 
 .our-people {
   //   display: flex;
+  font-size: 16px;
   margin: -15px;
   font-size: 16px;
   line-height: 1.19;
@@ -35,12 +36,6 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.box-img {
-  width: 450px;
-  height: 460px;
-  // width: 270px;
 }
 
 .staff {
@@ -95,4 +90,31 @@
 
 .icon-list:not(:last-child) {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .box-img {
+    width: 450px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box-img {
+    width: 354px;
+    height: 374px;
+  }
+
+  .staff {
+    width: 354px;
+  }
+
+  .box {
+    width: 354px;
+  }
+
+  .our-people {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
 }
