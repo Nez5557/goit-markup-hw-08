@@ -51,7 +51,8 @@ svg {
   font-family: "Roboto", sans-serif;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   outline: 1px solid red;
 }
 
@@ -734,7 +735,6 @@ svg {
 
 .footer-form {
   max-width: 100%;
-  height: 156px;
 }
 
 .outlook-form {
@@ -778,6 +778,7 @@ svg {
   text-align: center;
   font-family: "Roboto", sans-serif;
   padding: 10px 28px;
+  margin: auto;
   max-width: 200px;
   color: #fff;
   background-color: #2196f3;
