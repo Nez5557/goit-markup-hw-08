@@ -9,7 +9,14 @@
 body {
   letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
+  padding-top: 60px;
   /* outline: 1px solid red; */
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
 }
 
 a {
@@ -133,7 +140,6 @@ nav {
 }
 
 .link {
-  position: relative;
   color: #212121;
   font-weight: 500;
   line-height: 1.14;
@@ -147,7 +153,6 @@ nav {
 }
 
 .current {
-  position: relative;
   color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -224,7 +229,6 @@ nav {
     display: block;
   }
   .menu-container-nav {
-    position: relative;
     top: 0%;
     left: 0%;
     text-align: center;
@@ -1077,7 +1081,6 @@ nav {
 }
 
 button {
-  position: center;
   display: inline-block;
   font-family: inherit;
   cursor: pointer;

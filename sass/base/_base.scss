@@ -8,6 +8,10 @@
 body {
   letter-spacing: 0.03em;
   font-family: "Roboto", sans-serif;
+  padding-top: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
   /* outline: 1px solid red; */
 }
 
