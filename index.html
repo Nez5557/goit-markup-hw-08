@@ -17,7 +17,7 @@
         <title>WebStudio</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="container header-main">
                 <nav>
                     <a href="./index.html" class="logo-continuation">
@@ -269,7 +269,24 @@
                             </div>
                         </li>
                         <li class="image box">
-                            <img
+                            <picture>
+                                <source srcset="
+                                                ./images/img-2-1200@1x.jpg 1x,
+                                                ./images/img-2-1200@2x.jpg 2x"
+                                                media="(min-width:1200px)"
+                                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                                <source srcset="
+                                                ./images/img-2-768@1x.jpg 1x,
+                                                ./images/img-2-768@2x.jpg 2x" 
+                                                media="(min-width:768px)"
+                                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                                <source srcset="
+                                                ./images/img-2-480@1x.jpg 1x,
+                                                ./images/img-2-480@2x.jpg 2x" media="(max-width:767px)"
+                                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                                <img src="./images/img-2-480@1x.jpg" alt="Фото сотрудника">
+                            </picture>
+                            <!-- <img
                                 srcset="
                                         ./images/img-2-480-1x.jpg 480w,
                                         ./images/img-2-480-2x.jpg 480w,
@@ -281,7 +298,7 @@
                                 src="./images/img_2.jpg"
                                 alt="img5"
                                 sizes="(min-width: 1200px) 25vw (min-width: 768px) 50vw, 100vw"
-                            />
+                            /> -->
                             <div class="staff">
                                 <h3 class="our-team">Ольга Репина</h3>
                                 <p class="profession">Frontend Developer</p>
@@ -338,7 +355,25 @@
                             </div>
                         </li>
                         <li class="image box">
-                            <img
+                        <picture>
+                            <source srcset="
+                                            ./images/img-3-1200@1x.jpg 1x,
+                                            ./images/img-3-1200@2x.jpg 2x" 
+                                            media="(min-width:1200px)"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                            <source srcset="
+                                            ./images/img-3-768@1x.jpg 1x,
+                                            ./images/img-3-768@2x.jpg 2x" 
+                                            media="(min-width:768px)"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                            <source srcset="
+                                            ./images/img-3-480@1x.jpg 1x,
+                                            ./images/img-3-480@2x.jpg 2x" 
+                                            media="(max-width:767px)"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                            <img src="./images/img-3-480@1x.jpg" alt="Фото сотрудника">
+                        </picture>
+                            <!-- <img
                                 srcset="
                                         ./images/img-3-480-1x.jpg 480w,
                                         ./images/img-3-480-2x.jpg 480w,
@@ -350,7 +385,7 @@
                                 src="./images/img_3.jpg"
                                 alt="img6"
                                 sizes="(min-width: 1200px) 25vw (min-width: 768px) 50vw, 100vw"
-                            />
+                            /> -->
                             <div class="staff">
                                 <h3 class="our-team">Николай Тарасов</h3>
                                 <p class="profession">Marketing</p>
@@ -407,7 +442,25 @@
                             </div>
                         </li>
                         <li class="image box">
-                            <img
+                            <picture>
+                            <source srcset="
+                                            ./images/img-4-1200@1x.jpg 1x,
+                                            ./images/img-4-1200@2x.jpg 2x" 
+                                            media="(min-width:1200px)"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                            <source srcset="
+                                            ./images/img-4-768@1x.jpg 1x,
+                                            ./images/img-4-768@2x.jpg 2x" 
+                                            media="(min-width:768px)"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                            <source srcset="
+                                            ./images/img-4-480@1x.jpg 1x,
+                                            ./images/img-4-480@2x.jpg 2x" 
+                                            media="(max-width:767px)"
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px" type="image/jpg">
+                            <img src="./images/img-2-480@1x.jpg" alt="Фото сотрудника">
+                            </picture>
+                            <!-- <img
                                 srcset="
                                         ./images/img-4-480-1x.jpg 480w,
                                         ./images/img-4-480-2x.jpg 480w,
@@ -419,7 +472,7 @@
                                 src="./images/img_4.jpg"
                                 alt="img7"
                                 sizes="(min-width: 1200px) 25vw (min-width: 768px) 50vw, 100vw"
-                            />
+                            /> -->
                             <div class="staff">
                                 <h3 class="our-team">Михаил Ермаков</h3>
                                 <p class="profession">UI Designer</p>

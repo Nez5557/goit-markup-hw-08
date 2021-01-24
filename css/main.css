@@ -83,6 +83,17 @@ svg {
 /* Цвет фона #FFFFFF */
 /* Цвет фона команды #F5F4FA; */
 /* Цвет фона подвала #2F303A */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  min-height: 60px;
+  z-index: 1;
+  border-bottom: 1px solid #ececec;
+}
+
 /* Logo WebStudio */
 .logo {
   color: #2196f3;
@@ -199,14 +210,13 @@ svg {
   .menu-container {
     display: none;
     position: absolute;
-    top: 70%;
+    top: 100%;
     left: 0;
     width: 100%;
     height: 453px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #fff;
-    transform: translate(0%, -62%) scale(1);
     outline: 1px solid red;
   }
   .menu-container.is-open {
@@ -428,14 +438,10 @@ svg {
   .our-work {
     text-align: center;
   }
-  .broadcast {
-    width: 450px;
-  }
   .broadcast + .broadcast {
     margin-bottom: 30px;
   }
   .broadcast-title {
-    width: 450px;
     height: 120px;
     display: flex;
   }
@@ -540,7 +546,6 @@ svg {
 
 .box {
   background-color: #fff;
-  width: 450px;
   margin: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -610,8 +615,9 @@ svg {
 }
 
 @media screen and (max-width: 767px) {
-  .clients-list {
-    width: 450px;
+  .clients-item {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
@@ -627,14 +633,6 @@ svg {
   list-style: none;
 }
 
-.clients-item:nth-child(2n + 1) {
-  margin-right: 30px;
-}
-
-.clients-item:nth-child(-n + 4) {
-  margin-bottom: 30px;
-}
-
 .clients {
   fill: #afb1b8;
   width: 210px;
@@ -643,6 +641,8 @@ svg {
   border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
