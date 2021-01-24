@@ -24,7 +24,6 @@ a {
 }
 
 ul {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -60,6 +59,8 @@ nav {
   font-family: "Roboto", sans-serif;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 1px solid red;
 }
 
@@ -275,6 +276,7 @@ nav {
   }
   .menu-container-nav {
     display: flex;
+    align-items: center;
   }
   .site-nav {
     margin-right: 80px;
@@ -509,21 +511,24 @@ nav {
   }
 }
 
+ul.page-header {
+  margin: -15px;
+}
+
 @media screen and (min-width: 768px) {
   .our-work {
     text-align: left;
   }
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
   .broadcast {
     align-items: center;
     justify-content: center;
-    flex-basis: calc((100% - 4 * 30px) / 2);
+    flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
-  }
-  .broadcast:nth-child(-n + 2) {
-    margin-top: 0;
-  }
-  .broadcast:nth-last-child(-n + 2) {
-    margin-bottom: 0;
   }
   .broadcast-title {
     width: 354px;
@@ -534,8 +539,6 @@ nav {
   .broadcast-icon {
     display: inline-flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
     justify-content: center;
   }
 }
