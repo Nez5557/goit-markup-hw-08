@@ -63,37 +63,37 @@
   border-radius: 4px;
 }
 
-@media (min-width: 481px) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: url("../images/hero-480-1x.png");
   }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero-480-2x.png");
   }
 }
 
-@media (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: url("../images/hero-768-1x.png");
   }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero-768-2x.png");
   }
 }
 
-@media (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: url("../images/hero-1600-1x.png");
   }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero-1600-2x.png");
   }

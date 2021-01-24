@@ -203,9 +203,9 @@
     font-size: 18px;
     margin-bottom: 16px;
   }
-  .logo-continuation {
-    margin-right: 265px;
-  }
+  // .logo-continuation {
+  //   margin-right: 265px;
+  // }
   .site-nav,
   .contacts-list {
     font-size: 18px;
@@ -215,8 +215,8 @@
 @media screen and (min-width: 768px) {
   .page-header {
     display: flex;
-    list-style-image: center;
     list-style: none;
+    // list-style-image: center;
     // justify-content: center;
     // align-items: center;
   }
