@@ -151,11 +151,31 @@
                     <h2 class="description">Чем мы занимаемся</h2>
                     <ul class="page-header">
                         <li class="image">
-                            <img
+                            <picture>
+                                <source srcset="
+                                                ./images/box-1-1200@1x.png 1x,
+                                                ./images/box-1-1200@2x.png 2x" 
+                                                media="(min-width:1200px)"
+                                    sizes="(min-width: 1200px) 294px, 370px" type="image/jpg">
+                                    <img src="./images/box-1-1200@1x.png" alt="box">
+                                <source srcset="
+                                                ./images/box-2-1200@1x.png 1x,
+                                                ./images/box-2-1200@2x.png 2x" 
+                                                media="(min-width:1200px)"
+                                    sizes="(min-width: 1200px) 294px, 370px" type="image/jpg">
+                                    <img src="./images/box-2-1200@1x.png" alt="box">
+                                <source srcset="
+                                                ./images/box-3-1200@1x.png 1x,
+                                                ./images/box-3-1200@2x.png 2x" 
+                                                media="(min-width:1200px)"
+                                    sizes="(min-width: 1200px) 294px, 370px" type="image/jpg">                            
+                                    <img src="./images/box-3-1200@1x.png" alt="box">
+                            </picture>
+                            <!-- <img
                                 src="./images/box_1.jpg"
                                 alt="img1"
                                 width="370"
-                            />
+                            /> -->
                             <p class="product-thumb">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                         </li>
                         <li class="image">

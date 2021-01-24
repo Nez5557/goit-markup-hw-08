@@ -260,6 +260,7 @@ nav {
 @media screen and (min-width: 768px) {
   .page-header {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
   }
   .page-header li + li {
@@ -278,14 +279,14 @@ nav {
     display: flex;
   }
   .site-nav {
-    margin-right: 70px;
+    margin-right: 78px;
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 14px;
   }
   .logo-continuation {
-    margin-right: 70px;
+    margin-right: 78px;
   }
   .link {
     font-size: 14px;
@@ -296,6 +297,9 @@ nav {
   }
   .contacts-item:not(:last-child) {
     margin-bottom: 10px;
+  }
+  .social-links {
+    font-size: 12px;
   }
 }
 
@@ -510,6 +514,14 @@ nav {
 @media screen and (min-width: 768px) {
   .our-work {
     text-align: left;
+  }
+  .page-header {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  .broadcast {
+    align-items: center;
+    justify-content: center;
   }
   .broadcast-title {
     width: 354px;

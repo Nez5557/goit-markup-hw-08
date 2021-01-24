@@ -195,12 +195,20 @@
   .our-work {
     text-align: left;
   }
+  .page-header {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 
-  // .broadcast {
-  //   flex-flow: column;
-  //   width: 738px;
-  //   height: 507px;
-  // }
+  .broadcast {
+    align-items: center;
+    justify-content: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-flow: column;
+    // width: 738px;
+    // height: 507px;
+  }
 
   .broadcast-title {
     width: 354px;
