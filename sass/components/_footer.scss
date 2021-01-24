@@ -157,5 +157,32 @@
 
 .footer-form-icon {
   color: $white-color;
-  //   margin-left: 10px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) {
+  .basement .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .appeal {
+    display: flex;
+    align-items: center;
+    // margin-left: 165px;
+  }
+
+  .appeal-name {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-form {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
 }
