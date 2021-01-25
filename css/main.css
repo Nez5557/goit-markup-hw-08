@@ -59,6 +59,8 @@ nav {
   font-family: "Roboto", sans-serif;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
