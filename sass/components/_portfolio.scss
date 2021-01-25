@@ -188,24 +188,28 @@ button {
     max-width: 145px;
     height: 38px;
   }
+  // .overlay-text {
+  //   padding: 77px 24px;
+  // }
 }
+
 @media screen and (min-width: 768px) {
   .button-list {
     width: 611px;
     height: 54px;
     text-align: center;
     justify-content: center;
+    margin: 0 auto;
   }
+
   button {
     position: center;
   }
-  // .button-title {
-  // //   margin-right: 8px;
-  // // }
 
-  // .button-title:not(:last-child) {
-  //   margin-right: 8px;
-  // }
+  .button-title:not(:last-child) {
+    margin-right: 7px;
+  }
+
   .image-portfolio {
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;

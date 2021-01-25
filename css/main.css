@@ -769,9 +769,6 @@ nav {
 
 .appeal {
   text-transform: uppercase;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 60px;
 }
 
 .appeal-name {
@@ -780,10 +777,6 @@ nav {
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 20px;
-}
-
-.footer-form {
-  max-width: 100%;
 }
 
 .outlook-form {
@@ -846,6 +839,17 @@ nav {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-form {
+    max-width: 100%;
+  }
+  .appeal {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .basement .container {
     display: flex;
@@ -854,17 +858,21 @@ nav {
     justify-content: center;
   }
   .appeal {
-    display: flex;
+    display: block;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 165px;
   }
   .appeal-name {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
   }
   .footer-form {
     display: inline-block;
     justify-content: center;
     align-items: center;
+    width: 450px;
   }
 }
 
@@ -888,9 +896,6 @@ nav {
 
 .modal {
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%) scale(1);
   width: 450px;
   height: 609px;
   padding: 40px;
@@ -900,6 +905,22 @@ nav {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%) scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -4.5%) scale(1);
+  }
 }
 
 .form-input {
@@ -1253,9 +1274,13 @@ button {
     height: 54px;
     text-align: center;
     justify-content: center;
+    margin: 0 auto;
   }
   button {
     position: center;
+  }
+  .button-title:not(:last-child) {
+    margin-right: 7px;
   }
   .image-portfolio {
     flex-basis: calc((100% - 4 * 15px) / 2);
