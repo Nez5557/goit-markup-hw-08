@@ -59,7 +59,6 @@ nav {
   font-family: "Roboto", sans-serif;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -1348,22 +1347,11 @@ nav {
 }
 
 /* Портфолио */
-.portfolio-title {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .conteiner-portfolio {
-  width: 1200px;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-portfolio {
-  width: 1170px;
   align-items: center;
   text-align: center;
 }
@@ -1372,7 +1360,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: left;
 }
 
 .button-list button:hover {
@@ -1417,8 +1404,6 @@ button {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 .portfolio-box {
@@ -1433,8 +1418,6 @@ button {
 
 .image-portfolio {
   border: 1px solid #eeeeee;
-  margin-left: 30px;
-  margin-bottom: 30px;
 }
 
 .overlay-text {
@@ -1496,10 +1479,15 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  .portfolio-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .button-list {
     width: 362px;
     height: 91px;
     margin-bottom: 40px;
+    justify-content: left;
   }
   .image-portfolio {
     width: 450px;
@@ -1517,7 +1505,11 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .button-list {
     width: 611px;
     height: 54px;
@@ -1538,6 +1530,36 @@ button {
   .portfolio {
     margin-left: -15px;
     margin-right: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-title {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .button-list {
+    width: 611px;
+    height: 54px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .button-title:not(:last-child) {
+    margin-right: 7px;
+  }
+  button {
+    position: center;
+  }
+  .portfolio {
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+  .image-portfolio {
+    width: 370px;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */

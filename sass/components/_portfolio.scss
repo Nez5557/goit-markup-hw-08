@@ -1,41 +1,18 @@
 /* Портфолио */
 
-.portfolio-title {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
-}
-
 .conteiner-portfolio {
-  width: 1200px;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .hero-portfolio {
-  width: 1170px;
   align-items: center;
   text-align: center;
 }
 
-// .button-title {
-//   margin-right: 8px;
-// }
-
-// .button-title:not(:last-child) {
-//   margin-right: 8px;
-// }
-
 .button-list {
-  //   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: left;
 }
 
 .button-list button:hover {
@@ -68,11 +45,9 @@
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
-  //   width: 128px;
 }
 
 button {
-  // position: center;
   display: inline-block;
   font-family: inherit;
   cursor: pointer;
@@ -82,8 +57,6 @@ button {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
 }
 
 .portfolio-box {
@@ -91,22 +64,13 @@ button {
   overflow: hidden;
 }
 
-// img {
-//   width: 450px;
-//   //   height: 294px;
-// }
-
 .img-card {
   position: relative;
   overflow: hidden;
 }
 
 .image-portfolio {
-  // width: 450px;
-  //   width: 370px;
   border: 1px solid #eeeeee;
-  margin-left: 30px;
-  margin-bottom: 30px;
 }
 
 .overlay-text {
@@ -167,13 +131,25 @@ button {
   letter-spacing: 0, 03em;
   margin: 0;
 }
+
+// Mobale
+
 @media screen and (max-width: 767px) {
+  .portfolio-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .button-list {
     width: 362px;
     height: 91px;
     margin-bottom: 40px;
+    justify-content: left;
   }
+
   .image-portfolio {
+    // margin-left: 30px;
+    // margin-bottom: 30px;
     width: 450px;
   }
   .button-title:first-child {
@@ -183,17 +159,22 @@ button {
   .button-title:nth-child(even) {
     margin-right: 7px;
   }
+
   .button-list button {
     min-width: 73px;
     max-width: 145px;
     height: 38px;
   }
-  // .overlay-text {
-  //   padding: 77px 24px;
-  // }
 }
 
-@media screen and (min-width: 768px) {
+//Tablet
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .button-list {
     width: 611px;
     height: 54px;
@@ -218,5 +199,42 @@ button {
   .portfolio {
     margin-left: -15px;
     margin-right: -15px;
+  }
+}
+
+// Desctop
+
+@media screen and (min-width: 1200px) {
+  .portfolio-title {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .button-list {
+    width: 611px;
+    height: 54px;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .button-title:not(:last-child) {
+    margin-right: 7px;
+  }
+
+  button {
+    position: center;
+  }
+
+  .portfolio {
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+
+  .image-portfolio {
+    width: 370px;
+    margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
