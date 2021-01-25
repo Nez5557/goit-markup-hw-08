@@ -1489,6 +1489,7 @@ button {
     justify-content: left;
   }
   .image-portfolio {
+    margin-bottom: 30px;
     width: 450px;
   }
   .button-title:first-child {
