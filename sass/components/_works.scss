@@ -1,26 +1,163 @@
-/* Наша команда */
-
 // Mobale
 
-.about {
-  display: none;
+@media screen and (max-width: 767px) {
+  .about {
+    display: none;
+  }
+
+  .description {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  .box-img {
+    width: 450px;
+    height: 460px;
+  }
+
+  .team {
+    padding-bottom: 60px;
+    font-size: 28px;
+  }
+
+  .staff {
+    height: 162px;
+  }
 }
+
+//Tablet
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+  .description {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  .box-img {
+    width: 354px;
+    height: 374px;
+  }
+
+  .staff {
+    width: 354px;
+  }
+
+  .box {
+    width: 354px;
+  }
+
+  .our-people {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .team {
+    font-size: 28px;
+    padding-bottom: 60px;
+  }
+
+  .staff {
+    height: 162px;
+  }
+}
+
+// Desctop
+
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-bottom: 94px;
+  }
+
+  .description {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+
+  .product-thumb {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 0.03em;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+  }
+
+  .image {
+    position: relative;
+  }
+
+  .image + .image {
+    margin-left: 30px;
+  }
+
+  .team {
+    font-size: 36px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .box {
+    width: 450px;
+    width: 270px;
+  }
+
+  .our-people {
+    display: flex;
+  }
+
+  .image box {
+    width: 270px;
+    height: 428px;
+  }
+
+  .staff {
+    height: 168px;
+  }
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  color: $title-text-color;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Наша команда */
 
 .team {
   display: block;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
   text-align: center;
   color: $title-text-color;
   background-color: $secondary-background-color;
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
-  padding-bottom: 60px;
 }
 
 .our-people {
-  //   display: flex;
   margin: -15px;
   font-size: 16px;
   line-height: 1.19;
@@ -29,16 +166,10 @@
 
 .box {
   background-color: $white-color;
-  // width: 450px;
-  // width: 270px;
   margin: 15px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.staff {
-  height: 162px;
 }
 
 .our-team {
@@ -61,7 +192,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // margin-bottom: 30px;
 }
 
 .icon-title + .icon-title {
@@ -90,31 +220,4 @@
 
 .icon-list:not(:last-child) {
   margin-right: 10px;
-}
-
-@media screen and (max-width: 767px) {
-  .box-img {
-    width: 450px;
-    height: 460px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .box-img {
-    width: 354px;
-    height: 374px;
-  }
-
-  .staff {
-    width: 354px;
-  }
-
-  .box {
-    width: 354px;
-  }
-
-  .our-people {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-  }
 }

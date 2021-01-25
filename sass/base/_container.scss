@@ -1,14 +1,8 @@
 .container {
   font-family: "Roboto", sans-serif;
-  // min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin: 0 auto;
-  // justify-content: space-between;
-  // overflow: hidden;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 // Mobale
@@ -24,7 +18,6 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    // justify-content: space-between;
   }
 }
 
@@ -33,6 +26,5 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    // justify-content: space-between;
   }
 }
